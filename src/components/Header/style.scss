@@ -1,0 +1,37 @@
+header{
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  top: 0;
+  background: rgb(29, 28, 28);
+  color: white;
+  padding: 0;
+  z-index: 10;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+}
+
+
+header h1{
+  font-size: 30px;
+}
+
+
+header ul{
+  display: flex;
+  gap: 5px;
+}
+
+header ul li{
+  list-style-type: none;
+}
+
+

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../src/components/Home/background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  hyphens: auto;
+  background-color: #1d1b1b;
+}
+
+main{
+  padding: 15px;
+}
+
+//botão para voltar a home
+#button-home{
+  width: 100%;
+  font-size: 28px;
+  text-align: right;
+  a{
+    color: rgb(141, 139, 137);
+  }
+  :hover{
+    color: white;
+  }
+}
+
+

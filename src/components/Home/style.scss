@@ -1,0 +1,411 @@
+#home{
+  width: 67%;
+  height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20% 30% 30% 20%;
+}
+
+
+/* -----------------------------REDES SOCIAIS-------------------------------- */
+
+//div de redes sociais e botao
+#social-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-column: 4;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end; 
+  }
+  
+//icones github e linkedin
+.midias {
+  width: 30px;
+  margin-right: 15px;
+}
+  
+#social-contact button{
+  background-color: rgb(175, 24, 87);
+  padding: 14px;
+  width: 200px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: none;
+    a{
+    color: white;
+    text-decoration: none;
+    }
+  }
+
+#social-contact button:hover{
+  background-color: rgb(235, 164, 12);
+  transition: all .4s ease-in-out;
+}
+
+
+/* ------------------------------------APRESENTAÇÃO ----------------------------------------- */
+
+//apresentação
+#description{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: white;
+  margin-bottom: 0;
+  padding-top: 0;
+  
+  span{
+    color:rgb(212, 33, 108) ;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  p{
+    color:#a7afbd;
+  font-size: 2em;
+  font-weight: lighter;
+  }
+
+  h2{
+    font-size: 6em;
+    font-weight: bolder;
+    margin: 0;
+  }
+}
+
+
+/* -------------------------------- BANNER COM FOTO------------------------------------ */
+
+//container da foto 
+#container-photo{
+  grid-column: 4;
+  grid-row: 1/4;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#moldura{
+  background-color: rgb(235, 164, 12);
+  width: 350px;
+  height: 440px;
+  padding: 0;
+  transform: rotate(-25deg);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate
+{
+  0%
+    {
+      transform: rotate(-30deg);
+    }
+ 50%
+    {
+      transform: rotate(-35deg);
+    }
+  100%
+    {
+      transform: rotate(-30deg);
+    }
+}
+
+#container-photo img{
+  width: 350px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+/* -----------------------------------SEÇÕES------------------------------------------ */
+
+//container das seções
+#secoes{
+  display: flex;
+  flex-direction: row;
+  color: rgb(199, 9, 88);
+  grid-column: 1/3;
+  grid-row: 4/5;
+  align-self: start;
+  padding-bottom: 15px;
+  z-index: 100;
+
+  span{
+    font-size: 16px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
+
+
+//card de cada seção
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #494b50;
+  width: 135px;
+  height: 135px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 2.8em;
+  color: #a7afbd;
+}
+
+.menu:hover{
+  background-color: rgb(155, 24, 78);
+  color: #a7afbd;
+  transition: all .4s ease-in-out;
+}
+
+
+
+/* svg--------------------------------------------------------------------- */
+
+/* HORIZONTAL */
+.group1{
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 60;
+  color: rgba(241, 196, 50, 0.322);
+  font-size: 38px;
+  transform: translateX(-50px);
+  animation: animate1 9s linear infinite;
+}
+
+@keyframes animate1
+{
+  0%
+    {
+      transform: translateX(-150px);
+    }
+ 50%
+    {
+      transform: translateX(-250px);
+    }
+  100%
+    {
+      transform: translateX(-150px);
+    }
+}
+
+
+/* VERTICAL */
+.group2{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 60;
+  color: rgba(241, 63, 50, 0.295);
+  font-size: 38px;
+  transform: translateY(200px);
+  animation: animate2 9s linear infinite;
+}
+
+@keyframes animate2
+{
+  0%
+    {
+      transform: translateY(200px);
+    }
+ 50%
+    {
+      transform: translateY(150px);
+    }
+  100%
+    {
+      transform: translateY(200px);
+    }
+}
+
+
+/* ROTAÇAO */
+.group3{
+  width: 50px;
+  height: 50px;
+  color: rgba(56, 241, 50, 0.288);
+  font-size: 40px;
+  transform: rotateZ(360deg);
+  animation: animate3 10s linear infinite;
+}
+
+@keyframes animate3
+{
+  0%
+    {
+      transform: rotate(0deg);
+    }
+  100%
+    {
+      transform: rotate(360deg);
+    }
+}
+
+
+/* AUMENTAR */
+.group4{
+  width: 30px;
+  height: 30px;
+  color: rgba(50, 171, 241, 0.24);
+  font-size: 40px;
+  transform: scale(1.3);
+  animation:  animate4 5s linear infinite;
+}
+
+@keyframes animate4
+{
+  0%
+    {
+      transform: scale(1);
+    }
+    50%
+    {
+      transform: scale(1.3);
+    }
+    100%
+    {
+      transform: scale(1);
+    }
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 1280px){
+  #home{
+    width: 80%;
+  }
+  //apresentação
+  #description{
+  h2{
+    font-size: 5em;
+    }
+  }
+  //container da foto 
+  #container-photo{
+    grid-column: 4;
+  }
+
+  #moldura{
+    width: 300px;
+    height: 350px;
+  }
+  #container-photo img{
+    width: 300px;
+  }
+}
+
+
+
+@media screen and (max-width: 769px){
+  #home{
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 2fr 3fr;
+  }
+  
+  #social-contact{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: end; 
+    align-self: center;
+  }
+  
+  #social-contact button{
+    background-color: rgb(235, 164, 12);
+  }
+
+  #container-photo{
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  #container-photo img{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    border-radius: 15px;
+  }
+
+  #moldura{
+    display: none;
+  }
+
+  #description{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    span{
+      font-size: 1.7em;
+    }
+
+    h2{
+      font-size: 3em;
+    }
+    
+    p{
+    font-size: 1.7em;
+    font-weight: 400;
+    }
+  }
+  
+  #secoes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    justify-self: center;
+    padding-top: 1em;
+  }
+  
+    //card de cada seção
+  .menu{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1em;
+    width: 100%;
+    height: 70px;
+    font-size: 2em;
+    color: rgb(228, 18, 106);
+  }
+
+  .menu span{
+    color: white;
+    font-size: 0.7em;
+    font-weight: 500;
+    padding-left: 1em;
+  }
+  
+  .group1,
+  .group2,
+  .group3,
+  .group4
+  {
+    display: none;
+  }
+  }
+
+
+@media screen and (max-width: 481px){
+  #home{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 3fr;
+  }
+}
+ 

@@ -1,0 +1,65 @@
+#contact{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #494b50;
+  padding: 50px;
+
+   h1{
+    color: rgb(235, 43, 123);
+    font-size: 1.3em;
+    font-weight: normal;
+  }
+  
+   h2{
+    color: white;
+    font-size: 2.1em;
+    width: 50%;
+  }
+}
+
+
+#container-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+
+  a{
+    font-size: 6em;
+    color: rgb(233, 230, 225);
+  }
+    
+  a:hover{
+    color: rgb(155, 24, 78);
+  }
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width: 1280px){
+  #contact{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 769px){
+  #contact{
+    width: 100%;
+    padding: 2em;
+  }
+    
+  #contact h2{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
