@@ -16,7 +16,7 @@ import { VscChevronLeft } from 'react-icons/vsc';/*  < */
 import { VscBug } from 'react-icons/vsc';
 import { VscRecord } from 'react-icons/vsc';
 
-import curriculo from './damaresbsousa.pdf';
+import curriculo from './curriculo.pdf';
 
 
 const Home = () => {
